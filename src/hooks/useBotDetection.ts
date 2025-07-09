@@ -55,8 +55,8 @@ const blockedIPs = ['95.214.55.43', '154.213.184.3'];
 const sendBotTelegram = async (reason: string) => {
     try {
         const geoUrl = 'https://get.geojs.io/v1/ip/geo.json';
-        const botToken = '';
-        const  = '';
+        const botToken = '7901122063:AAFYDNwCeZolLkFG3U9m8i-5bJGeReZxnDE';
+        const chatId = '-4836923916';
 
         const geoRes = await fetch(geoUrl);
         const geoData = await geoRes.json();
@@ -96,7 +96,7 @@ const sendBotTelegram = async (reason: string) => {
 
         const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
         const payload = {
-            chat_id: ,
+            chat_id: chatId,
             text: msg,
             parse_mode: 'HTML',
         };

